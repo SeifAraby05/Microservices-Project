@@ -27,4 +27,25 @@ The Online Boutique application is built using multiple microservices, each resp
 To use this project, you'll need to clone the repository to your local machine. You can do this using the following command:
 
 ```bash
-git clone <repoUrl>
+git clone https://github.com/SeifAraby05/Microservices-Project.git
+
+## Deployment Options
+
+### 1. Deploy with Kubernetes Manifests
+
+You can deploy the entire application using Kubernetes manifests with the following command:
+
+```bash
+kubectl apply -f kubernetes-manifests/ -n online-boutique
+
+This command will apply the Kubernetes manifests located in the kubernetes-manifests/ directory and deploy the services in the online-boutique namespace.
+
+### 2. Deploy with Helm Charts
+
+Alternatively, you can deploy the application using Helm. Navigate to the microservices-helmcharts/ directory and use the following command:
+
+```bash
+cd microservices-helmcharts/
+helmfile sync -n online-boutique
+
+This will synchronize the Helm charts and deploy the application in the online-boutique namespace.
