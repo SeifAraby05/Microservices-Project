@@ -20,7 +20,7 @@ The Online Boutique application is built using multiple microservices, each resp
 | **checkoutservice**             | Go            | Retrieves user cart, prepares order and orchestrates the payment, shipping, and the email notification.                           |
 | **recommendationservice** | Python        | Recommends other products based on what's given in the cart.                                                                      |
 | **adservice**                        | Java          | Provides text ads based on given context words.                                                                                   |
-| **loadgenerator**               | Python/Locust | Continuously sends requests imitating realistic user shopping flows to the frontend.                                              |
+
 
 ## Getting Started
 
@@ -28,7 +28,7 @@ To use this project, you'll need to clone the repository to your local machine. 
 
 ```bash
 git clone https://github.com/SeifAraby05/Microservices-Project.git
-
+```
 ## Deployment Options
 
 ### 1. Deploy with Kubernetes Manifests
@@ -37,7 +37,7 @@ You can deploy the entire application using Kubernetes manifests with the follow
 
 ```bash
 kubectl apply -f kubernetes-manifests/ -n online-boutique
-
+```
 This command will apply the Kubernetes manifests located in the kubernetes-manifests/ directory and deploy the services in the online-boutique namespace.
 
 ### 2. Deploy with Helm Charts
@@ -47,5 +47,5 @@ Alternatively, you can deploy the application using Helm. Navigate to the micros
 ```bash
 cd microservices-helmcharts/
 helmfile sync -n online-boutique
-
+```
 This will synchronize the Helm charts and deploy the application in the online-boutique namespace.
