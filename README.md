@@ -38,11 +38,11 @@ You can deploy the entire application using Kubernetes manifests with the follow
 ```bash
 kubectl apply -f kubernetes-manifests/ -n online-boutique
 ```
-This command will apply the Kubernetes manifests located in the kubernetes-manifests/ directory and deploy the services in the online-boutique namespace.
+This command will deploy the services in the online-boutique namespace.
 
 ### 2. Deploy with Helm Charts
 
-Alternatively, you can deploy the application using Helm. Navigate to the microservices-helmcharts/ directory and use the following command:
+Alternatively, you can deploy the application using Helm. with the following commands:
 
 ```bash
 cd microservices-helmcharts/
