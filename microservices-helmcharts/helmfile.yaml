@@ -1,0 +1,61 @@
+releases:
+  - name: redis-cart
+    chart: redis
+    values:
+      - redis/values.yaml
+
+  - name: emailservice
+    chart: online-boutique
+    values: 
+      - Values/emailservice-values.yaml
+
+  - name: adservice
+    chart: online-boutique
+    values: 
+      - Values/adservice-values.yaml
+
+  - name: checkoutservice
+    chart: online-boutique
+    values: 
+      - Values/checkoutservice-values.yaml
+
+  - name: paymentservice
+    chart: online-boutique
+    values: 
+      - Values/paymentservice-values.yaml
+
+  - name: recommendationservice
+    chart: online-boutique
+    values: 
+      - Values/recommendationservice-values.yaml
+
+  - name: shoppingassistantservice
+    chart: online-boutique
+    values: 
+      - Values/shoppingassistantservice-values.yaml
+
+  - name: cartservice
+    chart: online-boutique
+    values: 
+      - Values/cartservice-values.yaml
+
+  - name: currencyservice
+    chart: online-boutique
+    values: 
+      - Values/currencyservice-values.yaml
+
+  - name: frontend
+    chart: online-boutique
+    values: 
+      - Values/frontend-values.yaml
+
+  - name: productcatalogservice
+    chart: online-boutique
+    values: 
+      - Values/productcatalogservice-values.yaml
+
+  - name: shippingservice
+    chart: online-boutique
+    values: 
+      - Values/shippingservice-values.yaml
+
